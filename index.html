@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jewelry store</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <br>
+    <h1>Fill in the form:</h1>
+    <br>
+    <form id="info">
+      <div class="form-group">
+        <label for="product">Select a product:</label>
+        <select id="product" class="form-control">
+          <option>Bracelet</option>
+          <option>Necklace</option>
+          <option>Earrings</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="firstName">Enter your first name:</label>
+        <input type="text" id="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Enter your last name:</label>
+        <input type="text" id="lastName">
+      </div>
+      <div class="form-group">
+        <label for="address">Enter your address:</label>
+        <input type="text" id="address">
+      </div>
+      <div class="form-group">
+        <label for="zipCode">Zip code:</label>
+        <input type="number" id="zipCode">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-info">Send order</button>
+    </form>
+    <br>
+    <div id="receipt">
+      <h2><span id="name"></span>, thank you for purchasing the <span class="product"></span>.</h2>
+      <h3>Confirmation of your address:</h3>
+      <p id="addressInput"></p>
+      <p id="zip"></p>
+    </div>
+  </body>
+</html>
